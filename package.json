@@ -4,12 +4,21 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./eslint.config.mts"
+      "import": "./dist/eslint.config.mjs",
+      "default": "./dist/eslint.config.mjs"
     }
   },
-  "main": "eslint.config.mts",
+  "main": "./dist/eslint.config.mjs",
+  "types": "./dist/eslint.config.d.ts",
   "files": [
-    "eslint.config.mts"
+    "dist"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "node",
+    "esm"
   ],
   "scripts": {
     "release": "changelogen --release --push && pnpm publish",
