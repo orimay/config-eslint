@@ -23,7 +23,8 @@
   "scripts": {
     "release": "changelogen --release --push && pnpm publish",
     "lint": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
