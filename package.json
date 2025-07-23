@@ -1,6 +1,6 @@
 {
   "name": "orimay-config-eslint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "exports": {
     ".": {
@@ -18,26 +18,26 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@stylistic/eslint-plugin": "^2.11.0",
-    "@types/node": "^20.17.6",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@stylistic/eslint-plugin": "^5.2.2",
+    "@types/node": "^24.1.0",
     "camelcase": "^8.0.0",
-    "changelogen": "^0.5.7",
-    "eslint": "^9.15.0",
-    "husky": "^9.1.6",
-    "jiti": "^2.4.0",
-    "lint-staged": "^15.2.10",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.15.0"
+    "changelogen": "^0.6.2",
+    "eslint": "^9.31.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.5.0",
+    "lint-staged": "^16.1.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
   },
   "peerDependencies": {
-    "eslint": "^9.15.0"
+    "eslint": "^9.31.0"
   },
   "lint-staged": {
     "*.mts": "pnpm run lint"
   },
   "dependencies": {
-    "eslint-plugin-perfectionist": "^3.9.1"
+    "eslint-plugin-perfectionist": "^4.15.0"
   }
 }
