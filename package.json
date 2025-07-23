@@ -1,35 +1,42 @@
 {
   "name": "orimay-config-eslint",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./eslint.config.mts",
-      "require": "./eslint.config.mts"
+      "import": "./dist/eslint.config.mjs",
+      "default": "./dist/eslint.config.mjs"
     }
   },
-  "main": "eslint.config.mts",
+  "main": "./dist/eslint.config.mjs",
+  "types": "./dist/eslint.config.d.ts",
   "files": [
-    "eslint.config.mts"
+    "dist"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "node",
+    "esm"
   ],
   "scripts": {
     "release": "changelogen --release --push && pnpm publish",
     "lint": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
-    "@stylistic/eslint-plugin": "^5.2.2",
-    "@types/node": "^24.1.0",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/node": "^20.17.6",
     "camelcase": "^8.0.0",
-    "changelogen": "^0.6.2",
-    "eslint": "^9.31.0",
-    "husky": "^9.1.7",
-    "jiti": "^2.5.0",
-    "lint-staged": "^16.1.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0"
+    "changelogen": "^0.5.7",
+    "eslint": "^9.15.0",
+    "husky": "^9.1.6",
+    "jiti": "^2.4.0",
+    "lint-staged": "^15.2.10",
+    "typescript": "^5.6.3"
   },
   "peerDependencies": {
     "eslint": "^9.31.0"
@@ -38,6 +45,9 @@
     "*.mts": "pnpm run lint"
   },
   "dependencies": {
-    "eslint-plugin-perfectionist": "^4.15.0"
+    "@eslint/js": "^9.20.0",
+    "@stylistic/eslint-plugin": "^2.11.0",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "typescript-eslint": "^8.15.0"
   }
 }
