@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.0.5
+
+[compare changes](https://github.com/orimay/config-eslint/compare/v1.0.3...v1.0.5)
+
+### 🏡 Chore
+
+- **release:** V1.0.2 ([3cd3d48](https://github.com/orimay/config-eslint/commit/3cd3d48))
+- **release:** V1.0.3 ([cfcde7a](https://github.com/orimay/config-eslint/commit/cfcde7a))
+- **release:** V1.0.4 ([7ba600c](https://github.com/orimay/config-eslint/commit/7ba600c))
+- **release:** V1.0.4 ([7171463](https://github.com/orimay/config-eslint/commit/7171463))
+
+### 🤖 CI
+
+- Build script ([cbc2c68](https://github.com/orimay/config-eslint/commit/cbc2c68))
+
+### ❤️ Contributors
+
+- Dmitrii Baranov <dmitrii.a.baranov@gmail.com>
+
 ## v1.0.4
 
 [compare changes](https://github.com/orimay/config-eslint/compare/v1.0.3...v1.0.4)
