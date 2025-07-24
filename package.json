@@ -1,12 +1,13 @@
 {
   "name": "orimay-config-eslint",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "exports": {
     ".": {
       "import": "./dist/eslint.config.mjs",
       "default": "./dist/eslint.config.mjs"
-    }
+    },
+    "./src": "./eslint.config.mts"
   },
   "main": "./dist/eslint.config.mjs",
   "types": "./dist/eslint.config.d.ts",
@@ -21,7 +22,7 @@
     "esm"
   ],
   "scripts": {
-    "release": "changelogen --release --push && pnpm publish",
+    "release": "changelogen --release --push && bun publish",
     "lint": "eslint . --fix",
     "prepare": "husky install",
     "build": "tsc"
@@ -42,7 +43,7 @@
     "eslint": "^9.31.0"
   },
   "lint-staged": {
-    "*.mts": "pnpm run lint"
+    "*.mts": "bun lint"
   },
   "dependencies": {
     "@eslint/js": "^9.31.0",
