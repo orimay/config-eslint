@@ -1,6 +1,6 @@
 {
   "name": "orimay-config-eslint",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "exports": {
     ".": {
@@ -24,7 +24,7 @@
   "scripts": {
     "release": "changelogen --release --push && bun publish",
     "lint": "eslint . --fix",
-    "prepare": "husky install",
+    "prepare": "bun husky install",
     "build": "tsc"
   },
   "devDependencies": {
